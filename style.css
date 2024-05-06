@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 50%;
+}
+
+.handContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.handContainer::after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+}
+
+.hand {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform-origin: bottom;
+}
